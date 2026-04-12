@@ -4,210 +4,156 @@
   <meta name="google-site-verification" content="_NnJK5cFiwKJmHzvBCx2DVTX4YJSMU4raqernVgt2cA" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roland Decker | MD & Anaesthesia Registrar</title>
+  <title>Joseph Roland Decker | Anaesthesia & Systems</title>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Joseph Roland Decker",
+    "jobTitle": "Anaesthesia Registrar",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Aminu Kano Teaching Hospital"
+    },
+    "url": "https://rolanddecker.github.io/"
+  }
+  </script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.13.0/dist/css/uswds.min.css">
   <style>
     :root {
-      --decker-teal: #008E9B;
-      --decker-teal-dark: #006975;
-      --decker-teal-light: #e6f6f7;
-      --decker-gold: #C9A227;
-      --decker-navy: #0d2137;
+      --usa-navy: #0d2137;
+      --usa-teal: #008E9B;
+      --usa-gold: #C9A227;
+      --usa-bg: #f8f9fa;
     }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; font-family: 'Public Sans Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    body { background: #fff; color: #1b1b1b; font-family: 'Public Sans Web', -apple-system, sans-serif; }
+    
+    .header-sticky {
+      position: sticky; top: 0; z-index: 1000;
+      background: var(--usa-navy); color: #fff;
+      padding: 0.75rem 0; border-bottom: 3px solid var(--usa-gold);
+    }
+    .header-container { max-width: 1024px; margin: 0 auto; display: flex; justify-content: space-between; padding: 0 1.5rem; }
+    .nav-links a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.8rem; margin-left: 1.2rem; text-transform: uppercase; }
 
-    /* ---- HEADER ---- */
-    .decker-header {
-      background: var(--decker-navy);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.8rem 1.5rem;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
-    }
-    .decker-logo {
-      font-family: 'Georgia', serif;
-      font-size: 1.15rem;
-      color: #fff;
-      letter-spacing: 0.02em;
-    }
-    .decker-logo span { color: var(--decker-gold); }
-    .decker-nav { display: flex; gap: 2rem; list-style: none; margin: 0; padding: 0; }
-    .decker-nav a { color: #c0d8e0; text-decoration: none; font-size: 0.88rem; font-weight: 600; letter-spacing: 0.04em; transition: color 0.15s; }
-    .decker-nav a:hover { color: #fff; }
-    .decker-nav a.accent { color: var(--decker-gold); }
-    @media (max-width: 640px) { .decker-nav { display: none; } }
+    .hero { background: var(--usa-bg); padding: 4.5rem 1.5rem; border-bottom: 1px solid #dfe1e2; }
+    .container { max-width: 850px; margin: 0 auto; }
+    .hero h1 { font-family: 'Georgia', serif; font-size: 2.5rem; color: var(--usa-navy); margin: 0; }
+    .hero .v-prop { font-size: 1.3rem; font-weight: 700; color: var(--usa-teal); margin: 0.8rem 0; }
+    .hero .subtext { font-size: 1.1rem; color: #444; margin-bottom: 2rem; max-width: 650px; }
+    
+    .btn { display: inline-block; padding: 0.7rem 1.5rem; font-weight: 700; text-decoration: none; border-radius: 3px; font-size: 0.9rem; }
+    .btn-primary { background: var(--usa-teal); color: #fff; margin-right: 0.8rem; }
+    .btn-secondary { border: 2px solid var(--usa-navy); color: var(--usa-navy); }
 
-    /* ---- HERO ---- */
-    .decker-hero {
-      background: linear-gradient(140deg, var(--decker-navy) 0%, #0a3a52 55%, #005f6a 100%);
-      padding: 6.5rem 0 5.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .decker-hero h1 {
-      color: #fff;
-      font-family: 'Georgia', serif;
-      font-size: 3.2rem;
-      line-height: 1.1;
-      margin-bottom: 1rem;
-    }
-    .hero-eyebrow {
-      color: var(--decker-gold);
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 1.2rem;
-    }
-    .decker-hero p.lead {
-      color: #b8d4dc;
-      font-size: 1.15rem;
-      line-height: 1.7;
-      max-width: 750px;
-      margin-bottom: 2.5rem;
-    }
-    .tag-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2rem; }
-    .tag {
-      background: rgba(0,142,155,0.25);
-      border: 1px solid rgba(0,142,155,0.4);
-      color: #9bd6de;
-      font-size: 0.75rem;
-      padding: 0.3rem 0.9rem;
-      border-radius: 2rem;
-      font-weight: 600;
-    }
+    .section { padding: 4rem 1.5rem; }
+    .section-label { color: var(--usa-teal); font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.12em; display: block; margin-bottom: 0.8rem; }
+    .section h2 { font-family: 'Georgia', serif; font-size: 1.8rem; color: var(--usa-navy); margin-bottom: 1.5rem; }
+    
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .proof-box { border-left: 3px solid var(--usa-gold); padding-left: 1rem; margin-bottom: 1rem; }
+    .proof-box strong { display: block; color: var(--usa-navy); font-size: 1rem; }
+    .proof-box span { font-size: 0.85rem; color: #666; }
 
-    /* ---- SECTION COMMON ---- */
-    .sec { padding: 5.5rem 1.5rem; max-width: 1100px; margin: 0 auto; }
-    .sec-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--decker-teal); margin-bottom: 0.5rem; }
-    .sec-title { font-family: 'Georgia', serif; font-size: 2.2rem; color: var(--decker-navy); margin-bottom: 1rem; }
-    .sec-rule { width: 50px; height: 4px; background: var(--decker-gold); margin-bottom: 2.5rem; }
+    .project-card { border: 1px solid #e1e1e1; padding: 1.8rem; margin-bottom: 2rem; border-radius: 2px; }
+    .pir-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.2rem; background: #fdfdfd; padding: 1rem; border: 1px solid #f0f0f0; }
+    .pir-label { display: block; font-size: 0.65rem; font-weight: 800; color: #999; text-transform: uppercase; }
+    .pir-val { margin: 0; font-size: 0.85rem; font-weight: 600; color: #333; }
 
-    /* ---- CONTENT GRID ---- */
-    .content-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 4rem; }
-    @media (max-width: 850px) { .content-grid { grid-template-columns: 1fr; } }
-    .text-block p { font-size: 1.05rem; line-height: 1.8; color: #333; margin-bottom: 1.5rem; }
+    footer { background: var(--usa-navy); color: #c5c5c5; padding: 2.5rem 1.5rem; text-align: center; font-size: 0.8rem; }
+    footer a { color: #fff; text-decoration: none; }
 
-    /* ---- CARDS & ITEMS ---- */
-    .projects-bg { background: #f8fbfc; }
-    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-    .card { background: #fff; border-top: 5px solid var(--decker-teal); padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s; }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,142,155,0.15); }
-    .card h3 { color: var(--decker-navy); margin-bottom: 0.8rem; font-size: 1.25rem; }
-    .card p { font-size: 0.95rem; color: #4a5568; line-height: 1.6; }
-
-    .cred-bg { background: var(--decker-navy); color: #fff; }
-    .cred-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
-    .cred-item { border-left: 4px solid var(--decker-teal); background: rgba(255,255,255,0.06); padding: 1.5rem; }
-    .cred-title { font-weight: 700; font-size: 1.1rem; color: var(--decker-gold); margin-bottom: 0.4rem; }
-    .cred-body { font-size: 0.9rem; color: #c0d8e0; }
-
-    .decker-footer { background: #081627; padding: 3rem 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
-    .decker-footer p { color: #5a7e90; font-size: 0.85rem; }
+    @media (max-width: 600px) { .grid-2, .pir-row { grid-template-columns: 1fr; } .hero h1 { font-size: 2rem; } }
   </style>
 </head>
 <body>
 
-<header class="decker-header">
-  <div class="decker-logo">Roland Decker <span>MD</span></div>
-  <nav>
-    <ul class="decker-nav">
-      <li><a href="#about">Executive Summary</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#credentials">Academic</a></li>
-      <li><a href="#contact" class="accent">Contact</a></li>
-    </ul>
-  </nav>
+<header class="header-sticky">
+  <div class="header-container">
+    <div style="font-weight: 800;">JOSEPH ROLAND DECKER</div>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <section class="decker-hero">
-    <div class="sec">
-      <div class="hero-eyebrow">Anaesthesia Registrar & Data Strategist</div>
-      <h1>Optimizing Healthcare <br>Through Clinical Logic <br>& Data Science.</h1>
-      <p class="lead">Bridging the gap between acute clinical care and technological innovation. From managed care systems to the operating theatre, I leverage data analytics and automation to build more resilient healthcare frameworks.</p>
-      <div class="tag-row">
-        <span class="tag">Python / SQL / R</span>
-        <span class="tag">Healthcare BI</span>
-        <span class="tag">Anaesthesia & Pain Mgmt</span>
-        <span class="tag">Domain Assets</span>
+<section class="hero">
+  <div class="container">
+    <span class="section-label">Field Status: Active</span>
+    <h1>Anaesthesia registrar building scalable healthcare systems in Africa.</h1>
+    <p class="v-prop">Current Focus: Perioperative systems, clinical training, and infrastructure.</p>
+    <p class="subtext">Based at <strong>Aminu Kano Teaching Hospital (AKTH)</strong>, I solve healthcare coordination problems using clinical logic and software automation.</p>
+    <a href="mailto:mailrolanddecker@gmail.com" class="btn btn-primary">Work with me</a>
+    <a href="https://www.linkedin.com/in/rolanddecker/" class="btn btn-secondary">LinkedIn</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="section-label">Institutional Experience</span>
+    <div class="grid-2">
+      <div class="proof-box"><strong>Anaesthesia Registrar</strong><span>AKTH Kano</span></div>
+      <div class="proof-box"><strong>MBBS (2007)</strong><span>ABU Zaria Graduate</span></div>
+      <div class="proof-box"><strong>13 Years Industry Experience</strong><span>Managed Healthcare & HMO Operations</span></div>
+      <div class="proof-box"><strong>WACS-DA Oct 2026</strong><span>Active Candidate</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="section" style="background: #fafafa; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+  <div class="container">
+    <span class="section-label">Selected Work</span>
+    <h2>Interventions</h2>
+
+    <div class="project-card">
+      <h3 style="margin-top:0;">WACS "War Manual"</h3>
+      <p style="font-size:0.95rem;">A case-based clinical roadmap designed specifically for West African anaesthesia candidates.</p>
+      <div class="pir-row">
+        <div><span class="pir-label">Problem</span><p class="pir-val">Low pass rates in professional exams.</p></div>
+        <div><span class="pir-label">Intervention</span><p class="pir-val">Developed case taxonomy & training guides.</p></div>
+        <div><span class="pir-label">Result</span><p class="pir-val">Structured path to candidate success.</p></div>
       </div>
     </div>
-  </section>
 
-  <section id="about" class="sec">
-    <div class="content-grid">
-      <div class="text-block">
-        <div class="sec-label">Background</div>
-        <h2 class="sec-title">Physician and Technologist.</h2>
-        <div class="sec-rule"></div>
-        <p>Currently practicing at Aminu Kano Teaching Hospital (AKTH), my clinical focus is on Anaesthesia and the future establishment of multidisciplinary pain clinics. My perspective is informed by 13 years of experience in Health Maintenance Organization (HMO) management, where I first recognized the transformative power of data-driven resource allocation.</p>
-        <p>I am an advocate for "Vibe Coding"—using natural language and AI to accelerate software development. My technical work involves building custom clinical tools, healthcare browser extensions, and analyzing market signals across digital asset classes.</p>
-      </div>
-      <div style="background: var(--decker-teal-light); padding: 2rem; border-radius: 4px;">
-        <h4 style="color: var(--decker-navy); margin-top: 0;">Clinical Focus</h4>
-        <ul style="color: #2d4a55; padding-left: 1.2rem; line-height: 1.8;">
-          <li>Acute & Chronic Pain Management</li>
-          <li>Regional Anaesthesia Techniques</li>
-          <li>WACS-DA Clinical Mentorship</li>
-          <li>Healthcare Automation Protocols</li>
-        </ul>
+    <div class="project-card">
+      <h3 style="margin-top:0;">Perioperative Operations</h3>
+      <p style="font-size:0.95rem;">Building lightweight software tools to manage hospital theatre and resource data.</p>
+      <div class="pir-row">
+        <div><span class="pir-label">Problem</span><p class="pir-val">Poor coordination of surgical resource data.</p></div>
+        <div><span class="pir-label">Intervention</span><p class="pir-val">Python/SQL clinical automation tools.</p></div>
+        <div><span class="pir-label">Result</span><p class="pir-val">Evidence-based theatre management.</p></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="projects" class="projects-bg">
-    <div class="sec">
-      <div class="sec-label">Current Work</div>
-      <h2 class="sec-title">Key Initiatives & Assets</h2>
-      <div class="sec-rule"></div>
-      <div class="card-grid">
-        <div class="card">
-          <h3>The WACS "War Manual"</h3>
-          <p>Developing a high-density, case-based clinical guide for West African College of Surgeons anaesthesia candidates. Designed as a field-manual for exam success and clinical excellence.</p>
-        </div>
-        <div class="card">
-          <h3>Healthcare BI Analytics</h3>
-          <p>Deploying SQL and Python-based dashboards to visualize clinical trends and operational efficiency within teaching hospital environments.</p>
-        </div>
-        <div class="card">
-          <h3>Digital Real Estate</h3>
-          <p>Strategic acquisition and research into the .ng and .ai namespaces, focusing on the intersection of healthcare branding and future-tech infrastructure.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section id="about" class="section">
+  <div class="container">
+    <span class="section-label">Thesis</span>
+    <h2>System Problems, Not Knowledge Gaps.</h2>
+    <p>Healthcare failure is primarily a systems coordination problem, not a knowledge deficit. My method combines clinical practice at AKTH with software development and infrastructure strategy to bridge this gap.</p>
+  </div>
+</section>
 
-  <section id="credentials" class="cred-bg">
-    <div class="sec">
-      <div class="sec-label">Professional Roadmap</div>
-      <h2 class="sec-title" style="color:#fff">Credentials & Education</h2>
-      <div class="sec-rule"></div>
-      <div class="cred-grid">
-        <div class="cred-item">
-          <div class="cred-title">Anaesthesia Registrar</div>
-          <div class="cred-body">Aminu Kano Teaching Hospital (AKTH)</div>
-        </div>
-        <div class="cred-item">
-          <div class="cred-title">MBBS (2007)</div>
-          <div class="cred-body">Ahmadu Bello University (ABU), Zaria</div>
-        </div>
-        <div class="cred-item">
-          <div class="cred-title">M.Sc. Pain Management</div>
-          <div class="cred-body">University of Edinburgh (Prospective)</div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
+<section id="contact" class="section" style="text-align: center;">
+  <div class="container">
+    <span class="section-label">Contact</span>
+    <h2>Available for Consultation & Partnerships.</h2>
+    <p style="font-size: 1.25rem; font-weight: 700;">mailrolanddecker@gmail.com</p>
+    <br>
+    <a href="https://www.linkedin.com/in/rolanddecker/" class="btn btn-primary">LinkedIn Connect</a>
+  </div>
+</section>
 
-<footer class="decker-footer">
-  <p>&copy; 2026 Roland Decker. Designed for high information density and clinical precision.</p>
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Joseph Roland Decker. Built for AKTH & Beyond.</p>
+    <p><a href="https://www.linkedin.com/in/rolanddecker/">LinkedIn</a> &nbsp;&bull;&nbsp; <a href="https://x.com/RolandDecker">X/Twitter</a></p>
+  </div>
 </footer>
 
 </body>
