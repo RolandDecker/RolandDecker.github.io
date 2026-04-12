@@ -4,76 +4,188 @@
   <meta name="google-site-verification" content="_NnJK5cFiwKJmHzvBCx2DVTX4YJSMU4raqernVgt2cA" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joseph Roland Decker | Anaesthesia & Systems</title>
+  <title>Joseph Roland Decker | Anaesthesia Registrar & Systems Architect</title>
   
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Joseph Roland Decker",
-    "jobTitle": "Anaesthesia Registrar",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Aminu Kano Teaching Hospital"
-    },
-    "url": "https://rolanddecker.github.io/"
-  }
-  </script>
-
+  <meta name="description" content="Official professional site of Joseph Roland Decker. Anaesthesia Registrar at AKTH, specializing in healthcare systems and clinical education.">
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.13.0/dist/css/uswds.min.css">
+  
   <style>
     :root {
-      --usa-navy: #0d2137;
-      --usa-teal: #008E9B;
-      --usa-gold: #C9A227;
-      --usa-bg: #f8f9fa;
+      --decker-navy: #1a242f; /* Institutional Navy */
+      --decker-teal: #00a6d2; /* Action Teal */
+      --decker-gold: #ffbe2e; /* Authority Gold */
+      --decker-bg-light: #f0f3f5;
     }
-    body { background: #fff; color: #1b1b1b; font-family: 'Public Sans Web', -apple-system, sans-serif; }
-    
-    .header-sticky {
-      position: sticky; top: 0; z-index: 1000;
-      background: var(--usa-navy); color: #fff;
-      padding: 0.75rem 0; border-bottom: 3px solid var(--usa-gold);
+
+    body {
+      margin: 0;
+      font-family: 'Public Sans Web', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #1b1b1b;
+      line-height: 1.5;
     }
-    .header-container { max-width: 1024px; margin: 0 auto; display: flex; justify-content: space-between; padding: 0 1.5rem; }
-    .nav-links a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.8rem; margin-left: 1.2rem; text-transform: uppercase; }
 
-    .hero { background: var(--usa-bg); padding: 4.5rem 1.5rem; border-bottom: 1px solid #dfe1e2; }
-    .container { max-width: 850px; margin: 0 auto; }
-    .hero h1 { font-family: 'Georgia', serif; font-size: 2.5rem; color: var(--usa-navy); margin: 0; }
-    .hero .v-prop { font-size: 1.3rem; font-weight: 700; color: var(--usa-teal); margin: 0.8rem 0; }
-    .hero .subtext { font-size: 1.1rem; color: #444; margin-bottom: 2rem; max-width: 650px; }
-    
-    .btn { display: inline-block; padding: 0.7rem 1.5rem; font-weight: 700; text-decoration: none; border-radius: 3px; font-size: 0.9rem; }
-    .btn-primary { background: var(--usa-teal); color: #fff; margin-right: 0.8rem; }
-    .btn-secondary { border: 2px solid var(--usa-navy); color: var(--usa-navy); }
+    /* ---- INSTITUTIONAL HEADER ---- */
+    .usa-header {
+      background-color: var(--decker-navy);
+      border-bottom: 4px solid var(--decker-gold);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 0.75rem 0;
+    }
+    .header-content {
+      max-width: 1024px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1.5rem;
+    }
+    .header-logo {
+      color: #fff;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.9rem;
+    }
+    .header-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-left: 1.5rem;
+      text-transform: uppercase;
+    }
+    .header-nav a:hover { color: var(--decker-gold); }
 
-    .section { padding: 4rem 1.5rem; }
-    .section-label { color: var(--usa-teal); font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.12em; display: block; margin-bottom: 0.8rem; }
-    .section h2 { font-family: 'Georgia', serif; font-size: 1.8rem; color: var(--usa-navy); margin-bottom: 1.5rem; }
-    
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-    .proof-box { border-left: 3px solid var(--usa-gold); padding-left: 1rem; margin-bottom: 1rem; }
-    .proof-box strong { display: block; color: var(--usa-navy); font-size: 1rem; }
-    .proof-box span { font-size: 0.85rem; color: #666; }
+    /* ---- HERO SECTION ---- */
+    .hero {
+      background-color: var(--decker-bg-light);
+      padding: 5rem 1.5rem;
+      border-bottom: 1px solid #dfe1e2;
+    }
+    .hero-container { max-width: 800px; margin: 0 auto; }
+    .hero-eyebrow {
+      display: block;
+      color: var(--decker-teal);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-family: 'Source Serif Pro Web', 'Georgia', 'Times New Roman', serif;
+      font-size: 3rem;
+      color: var(--decker-navy);
+      margin: 0 0 1.5rem 0;
+      line-height: 1.1;
+    }
+    .hero .lead {
+      font-size: 1.25rem;
+      color: #444;
+      margin-bottom: 2.5rem;
+      border-left: 4px solid var(--decker-gold);
+      padding-left: 1.5rem;
+    }
 
-    .project-card { border: 1px solid #e1e1e1; padding: 1.8rem; margin-bottom: 2rem; border-radius: 2px; }
-    .pir-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.2rem; background: #fdfdfd; padding: 1rem; border: 1px solid #f0f0f0; }
-    .pir-label { display: block; font-size: 0.65rem; font-weight: 800; color: #999; text-transform: uppercase; }
-    .pir-val { margin: 0; font-size: 0.85rem; font-weight: 600; color: #333; }
+    /* ---- BUTTONS ---- */
+    .usa-button {
+      background-color: var(--decker-teal);
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      margin-right: 1rem;
+    }
+    .usa-button-outline {
+      background-color: transparent;
+      border: 2px solid var(--decker-navy);
+      color: var(--decker-navy);
+    }
 
-    footer { background: var(--usa-navy); color: #c5c5c5; padding: 2.5rem 1.5rem; text-align: center; font-size: 0.8rem; }
-    footer a { color: #fff; text-decoration: none; }
+    /* ---- SECTION STYLING ---- */
+    .section { padding: 4rem 1.5rem; max-width: 1024px; margin: 0 auto; }
+    .section-title {
+      font-family: 'Source Serif Pro Web', serif;
+      font-size: 2.25rem;
+      color: var(--decker-navy);
+      margin-bottom: 2rem;
+    }
+    .usa-rule {
+      width: 3rem;
+      height: 0.3rem;
+      background-color: var(--decker-gold);
+      margin-bottom: 2.5rem;
+    }
 
-    @media (max-width: 600px) { .grid-2, .pir-row { grid-template-columns: 1fr; } .hero h1 { font-size: 2rem; } }
+    /* ---- PROOF GRID ---- */
+    .usa-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .grid-item h4 {
+      margin: 0;
+      color: var(--decker-navy);
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+    .grid-item p { margin: 0.25rem 0; font-size: 0.9rem; color: #555; }
+
+    /* ---- PROJECT CARDS (PIR FRAMEWORK) ---- */
+    .project-card {
+      border: 1px solid #dfe1e2;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .project-card h3 {
+      font-family: 'Source Serif Pro Web', serif;
+      margin-top: 0;
+      color: var(--decker-navy);
+    }
+    .pir-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+      border-top: 1px solid #dfe1e2;
+      padding-top: 1.5rem;
+    }
+    .pir-item b {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      color: #71767a;
+      letter-spacing: 0.05em;
+    }
+    .pir-item span { font-size: 0.85rem; font-weight: 600; }
+
+    /* ---- FOOTER ---- */
+    .usa-footer {
+      background-color: var(--decker-navy);
+      color: #adadad;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    .usa-footer a { color: #fff; text-decoration: none; font-weight: 700; }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2.25rem; }
+      .pir-container { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
 
-<header class="header-sticky">
-  <div class="header-container">
-    <div style="font-weight: 800;">JOSEPH ROLAND DECKER</div>
-    <nav class="nav-links">
+<header class="usa-header">
+  <div class="header-content">
+    <div class="header-logo">Joseph Roland Decker</div>
+    <nav class="header-nav">
       <a href="#work">Work</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -81,78 +193,87 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <span class="section-label">Field Status: Active</span>
-    <h1>Anaesthesia registrar building scalable healthcare systems in Africa.</h1>
-    <p class="v-prop">Current Focus: Perioperative systems, clinical training, and infrastructure.</p>
-    <p class="subtext">Based at <strong>Aminu Kano Teaching Hospital (AKTH)</strong>, I solve healthcare coordination problems using clinical logic and software automation.</p>
-    <a href="mailto:mailrolanddecker@gmail.com" class="btn btn-primary">Work with me</a>
-    <a href="https://www.linkedin.com/in/rolanddecker/" class="btn btn-secondary">LinkedIn</a>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <span class="section-label">Institutional Experience</span>
-    <div class="grid-2">
-      <div class="proof-box"><strong>Anaesthesia Registrar</strong><span>AKTH Kano</span></div>
-      <div class="proof-box"><strong>MBBS (2007)</strong><span>ABU Zaria Graduate</span></div>
-      <div class="proof-box"><strong>13 Years Industry Experience</strong><span>Managed Healthcare & HMO Operations</span></div>
-      <div class="proof-box"><strong>WACS-DA Oct 2026</strong><span>Active Candidate</span></div>
+<main>
+  <section class="hero">
+    <div class="hero-container">
+      <span class="hero-eyebrow">Institutional Portfolio</span>
+      <h1>Anaesthesia registrar building scalable healthcare systems in Africa.</h1>
+      <p class="lead">Applying systems thinking and automation to clinical perioperative care at Aminu Kano Teaching Hospital (AKTH).</p>
+      <div class="hero-actions">
+        <a href="mailto:mailrolanddecker@gmail.com" class="usa-button">Contact / Work with me</a>
+        <a href="https://www.linkedin.com/in/rolanddecker/" class="usa-button usa-button-outline">LinkedIn Profile</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="work" class="section" style="background: #fafafa; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
-  <div class="container">
-    <span class="section-label">Selected Work</span>
-    <h2>Interventions</h2>
+  <section class="section">
+    <span class="hero-eyebrow">Direct Proof</span>
+    <h2 class="section-title">Credentials & Standing</h2>
+    <div class="usa-rule"></div>
+    <div class="usa-grid">
+      <div class="grid-item">
+        <h4>AKTH Kano</h4>
+        <p>Anaesthesia Registrar</p>
+      </div>
+      <div class="grid-item">
+        <h4>ABU Zaria</h4>
+        <p>MBBS (2007) Graduate</p>
+      </div>
+      <div class="grid-item">
+        <h4>13 Years HMO</h4>
+        <p>Healthcare Systems Mgmt</p>
+      </div>
+      <div class="grid-item">
+        <h4>WACS-DA</h4>
+        <p>October 2026 Candidate</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section">
+    <span class="hero-eyebrow">Operational Focus</span>
+    <h2 class="section-title">Selected Interventions</h2>
+    <div class="usa-rule"></div>
 
     <div class="project-card">
-      <h3 style="margin-top:0;">WACS "War Manual"</h3>
-      <p style="font-size:0.95rem;">A case-based clinical roadmap designed specifically for West African anaesthesia candidates.</p>
-      <div class="pir-row">
-        <div><span class="pir-label">Problem</span><p class="pir-val">Low pass rates in professional exams.</p></div>
-        <div><span class="pir-label">Intervention</span><p class="pir-val">Developed case taxonomy & training guides.</p></div>
-        <div><span class="pir-label">Result</span><p class="pir-val">Structured path to candidate success.</p></div>
+      <h3>The WACS "War Manual"</h3>
+      <p>High-density clinical success roadmap for West African anaesthesia candidates.</p>
+      <div class="pir-container">
+        <div class="pir-item"><b>Problem</b><span>Fragmented clinical prep.</span></div>
+        <div class="pir-item"><b>Intervention</b><span>Case-based taxonomy guide.</span></div>
+        <div class="pir-item"><b>Result</b><span>Accelerated candidate logic.</span></div>
       </div>
     </div>
 
     <div class="project-card">
-      <h3 style="margin-top:0;">Perioperative Operations</h3>
-      <p style="font-size:0.95rem;">Building lightweight software tools to manage hospital theatre and resource data.</p>
-      <div class="pir-row">
-        <div><span class="pir-label">Problem</span><p class="pir-val">Poor coordination of surgical resource data.</p></div>
-        <div><span class="pir-label">Intervention</span><p class="pir-val">Python/SQL clinical automation tools.</p></div>
-        <div><span class="pir-label">Result</span><p class="pir-val">Evidence-based theatre management.</p></div>
+      <h3>Healthcare BI Systems</h3>
+      <p>Automated clinical management tools for resource allocation.</p>
+      <div class="pir-container">
+        <div class="pir-item"><b>Problem</b><span>Poor resource coordination.</span></div>
+        <div class="pir-item"><b>Intervention</b><span>Python/SQL Data tools.</span></div>
+        <div class="pir-item"><b>Result</b><span>Evidence-based operations.</span></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="about" class="section">
-  <div class="container">
-    <span class="section-label">Thesis</span>
-    <h2>System Problems, Not Knowledge Gaps.</h2>
-    <p>Healthcare failure is primarily a systems coordination problem, not a knowledge deficit. My method combines clinical practice at AKTH with software development and infrastructure strategy to bridge this gap.</p>
-  </div>
-</section>
+  <section id="about" class="section" style="background-color: #fcfcfc; border: 1px solid #eee;">
+    <h2 class="section-title">The Thesis</h2>
+    <p style="font-size: 1.15rem;">Healthcare failure in Africa is primarily a <strong>systems coordination problem</strong>, not a knowledge deficit. I bridge this gap by combining bedside anaesthesia with software development and capital strategy.</p>
+  </section>
 
-<section id="contact" class="section" style="text-align: center;">
-  <div class="container">
-    <span class="section-label">Contact</span>
-    <h2>Available for Consultation & Partnerships.</h2>
-    <p style="font-size: 1.25rem; font-weight: 700;">mailrolanddecker@gmail.com</p>
+  <section id="contact" class="section" style="text-align: center;">
+    <span class="hero-eyebrow">Channel</span>
+    <h2 class="section-title">Strategic Inquiries</h2>
+    <p>mailrolanddecker@gmail.com</p>
     <br>
-    <a href="https://www.linkedin.com/in/rolanddecker/" class="btn btn-primary">LinkedIn Connect</a>
-  </div>
-</section>
+    <a href="https://www.linkedin.com/in/rolanddecker/" class="usa-button">Connect via LinkedIn</a>
+  </section>
+</main>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2026 Joseph Roland Decker. Built for AKTH & Beyond.</p>
-    <p><a href="https://www.linkedin.com/in/rolanddecker/">LinkedIn</a> &nbsp;&bull;&nbsp; <a href="https://x.com/RolandDecker">X/Twitter</a></p>
+<footer class="usa-footer">
+  <div class="hero-container">
+    <p>&copy; 2026 Joseph Roland Decker. Built to USWDS High-Performance Standards.</p>
+    <p><a href="https://www.linkedin.com/in/rolanddecker/">LinkedIn</a> | <a href="https://x.com/RolandDecker">Twitter/X</a></p>
   </div>
 </footer>
 
