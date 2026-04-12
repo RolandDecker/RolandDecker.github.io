@@ -97,4 +97,118 @@
     .projects-bg { background: #f8fbfc; }
     .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
     .card { background: #fff; border-top: 5px solid var(--decker-teal); padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s; }
-    .card:hover { transform: translateY(-4px); box-shadow:
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,142,155,0.15); }
+    .card h3 { color: var(--decker-navy); margin-bottom: 0.8rem; font-size: 1.25rem; }
+    .card p { font-size: 0.95rem; color: #4a5568; line-height: 1.6; }
+
+    .cred-bg { background: var(--decker-navy); color: #fff; }
+    .cred-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
+    .cred-item { border-left: 4px solid var(--decker-teal); background: rgba(255,255,255,0.06); padding: 1.5rem; }
+    .cred-title { font-weight: 700; font-size: 1.1rem; color: var(--decker-gold); margin-bottom: 0.4rem; }
+    .cred-body { font-size: 0.9rem; color: #c0d8e0; }
+
+    .decker-footer { background: #081627; padding: 3rem 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
+    .decker-footer p { color: #5a7e90; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+
+<header class="decker-header">
+  <div class="decker-logo">Roland Decker <span>MD</span></div>
+  <nav>
+    <ul class="decker-nav">
+      <li><a href="#about">Executive Summary</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#credentials">Academic</a></li>
+      <li><a href="#contact" class="accent">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="decker-hero">
+    <div class="sec">
+      <div class="hero-eyebrow">Anaesthesia Registrar & Data Strategist</div>
+      <h1>Optimizing Healthcare <br>Through Clinical Logic <br>& Data Science.</h1>
+      <p class="lead">Bridging the gap between acute clinical care and technological innovation. From managed care systems to the operating theatre, I leverage data analytics and automation to build more resilient healthcare frameworks.</p>
+      <div class="tag-row">
+        <span class="tag">Python / SQL / R</span>
+        <span class="tag">Healthcare BI</span>
+        <span class="tag">Anaesthesia & Pain Mgmt</span>
+        <span class="tag">Domain Assets</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="sec">
+    <div class="content-grid">
+      <div class="text-block">
+        <div class="sec-label">Background</div>
+        <h2 class="sec-title">Physician and Technologist.</h2>
+        <div class="sec-rule"></div>
+        <p>Currently practicing at Aminu Kano Teaching Hospital (AKTH), my clinical focus is on Anaesthesia and the future establishment of multidisciplinary pain clinics. My perspective is informed by 13 years of experience in Health Maintenance Organization (HMO) management, where I first recognized the transformative power of data-driven resource allocation.</p>
+        <p>I am an advocate for "Vibe Coding"—using natural language and AI to accelerate software development. My technical work involves building custom clinical tools, healthcare browser extensions, and analyzing market signals across digital asset classes.</p>
+      </div>
+      <div style="background: var(--decker-teal-light); padding: 2rem; border-radius: 4px;">
+        <h4 style="color: var(--decker-navy); margin-top: 0;">Clinical Focus</h4>
+        <ul style="color: #2d4a55; padding-left: 1.2rem; line-height: 1.8;">
+          <li>Acute & Chronic Pain Management</li>
+          <li>Regional Anaesthesia Techniques</li>
+          <li>WACS-DA Clinical Mentorship</li>
+          <li>Healthcare Automation Protocols</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-bg">
+    <div class="sec">
+      <div class="sec-label">Current Work</div>
+      <h2 class="sec-title">Key Initiatives & Assets</h2>
+      <div class="sec-rule"></div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>The WACS "War Manual"</h3>
+          <p>Developing a high-density, case-based clinical guide for West African College of Surgeons anaesthesia candidates. Designed as a field-manual for exam success and clinical excellence.</p>
+        </div>
+        <div class="card">
+          <h3>Healthcare BI Analytics</h3>
+          <p>Deploying SQL and Python-based dashboards to visualize clinical trends and operational efficiency within teaching hospital environments.</p>
+        </div>
+        <div class="card">
+          <h3>Digital Real Estate</h3>
+          <p>Strategic acquisition and research into the .ng and .ai namespaces, focusing on the intersection of healthcare branding and future-tech infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="credentials" class="cred-bg">
+    <div class="sec">
+      <div class="sec-label">Professional Roadmap</div>
+      <h2 class="sec-title" style="color:#fff">Credentials & Education</h2>
+      <div class="sec-rule"></div>
+      <div class="cred-grid">
+        <div class="cred-item">
+          <div class="cred-title">Anaesthesia Registrar</div>
+          <div class="cred-body">Aminu Kano Teaching Hospital (AKTH)</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-title">MBBS (2007)</div>
+          <div class="cred-body">Ahmadu Bello University (ABU), Zaria</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-title">M.Sc. Pain Management</div>
+          <div class="cred-body">University of Edinburgh (Prospective)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="decker-footer">
+  <p>&copy; 2026 Roland Decker. Designed for high information density and clinical precision.</p>
+</footer>
+
+</body>
+</html>
