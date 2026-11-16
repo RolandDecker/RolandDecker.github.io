@@ -1,489 +1,399 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="_NnJK5cFiwKJmHzvBCx2DVTX4YJSMU4raqernVgt2cA" />
-  <meta name="description" content="Dr. Joseph Roland Decker, anaesthesia registrar at Aminu Kano Teaching Hospital, Kano. Clinician, educator and builder: WACS DA study group, the WACS Update Book 2026, and anaesthesia.ng.">
-  <meta property="og:title" content="Dr. Joseph Roland Decker | Anaesthesia Registrar">
-  <meta property="og:description" content="Clinician, educator and builder at the intersection of anaesthesia practice and structured knowledge production.">
-  <meta property="og:type" content="profile">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101f2b">
+  <meta name="description" content="Joseph Roland Decker is an anaesthetist, healthcare systems thinker and technology builder based in Nigeria.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Joseph Roland Decker | Medicine, Systems & Technology">
+  <meta property="og:description" content="Anaesthetist. Healthcare systems thinker. Building better healthcare in Africa.">
   <meta property="og:url" content="https://rolanddecker.github.io/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Joseph Roland Decker","honorificPrefix":"Dr.","jobTitle":"Anaesthesia Registrar","affiliation":{"@type":"Organization","name":"Aminu Kano Teaching Hospital"},"url":"https://rolanddecker.github.io/","sameAs":["https://github.com/RolandDecker","https://anaesthesia.ng"],"knowsAbout":["Anaesthesia","Pain Management","Medical Education","Health Technology"]}</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Joseph Roland Decker | Anaesthesia Registrar</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.13.0/dist/css/uswds.min.css">
+  <title>Joseph Roland Decker | Medicine, Systems & Technology</title>
+  <link rel="canonical" href="https://rolanddecker.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Joseph Roland Decker",
+    "url":"https://rolanddecker.github.io/",
+    "jobTitle":"Anaesthesia Registrar",
+    "description":"Anaesthetist and healthcare systems and technology builder based in Nigeria.",
+    "sameAs":[
+      "https://github.com/RolandDecker",
+      "https://x.com/rolanddecker",
+      "https://anaesthesia.ng"
+    ],
+    "knowsAbout":[
+      "Anaesthesia","Pain medicine","Healthcare systems","Health technology",
+      "Medical education","Clinical research","Healthcare financing"
+    ]
+  }
+  </script>
   <style>
-    :root {
-      --decker-teal: #008E9B;
-      --decker-teal-dark: #006975;
-      --decker-teal-light: #e6f6f7;
-      --decker-gold: #C9A227;
-      --decker-navy: #0d2137;
+    :root{
+      --ink:#172631;--muted:#62717a;--paper:#f4f3ee;--white:#fffefa;
+      --navy:#101f2b;--navy2:#182d3a;--teal:#008e9b;--teal2:#b9e1df;
+      --gold:#c5a15b;--line:#d9dedb;--serif:Georgia,"Times New Roman",serif;
+      --sans:"DM Sans",Arial,sans-serif;--display:Manrope,Arial,sans-serif;
+      --mono:"DM Mono",monospace;--max:1160px;
     }
-
-    html { scroll-behavior: smooth; }
-
-    /* ---- HEADER ---- */
-    .decker-header {
-      background: var(--decker-navy);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.8rem 1.5rem;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65}
+    a{color:inherit}
+    a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+    .wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+    .mono{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+    .topline{height:4px;background:linear-gradient(90deg,var(--teal) 0 68%,var(--gold) 68% 100%)}
+    header{position:sticky;top:0;z-index:20;background:rgba(16,31,43,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .brand{text-decoration:none;color:#fff;font-family:var(--display);font-weight:800;letter-spacing:-.04em;font-size:18px;white-space:nowrap}
+    .brand span{color:var(--teal2)}
+    .navlinks{display:flex;align-items:center;gap:27px}
+    .navlinks a{color:#d2dcdf;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;transition:color .2s}
+    .navlinks a:hover{color:#fff}
+    .navlinks .contact-link{padding:10px 15px;border:1px solid rgba(185,225,223,.45);color:#fff}
+    .menu{display:none;background:none;border:1px solid #50616a;color:white;padding:8px 11px;font:inherit}
+    .hero{background:var(--navy);color:white;position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:660px;height:660px;border:1px solid rgba(185,225,223,.12);border-radius:50%;right:-220px;top:-300px;box-shadow:0 0 0 65px rgba(185,225,223,.025),0 0 0 130px rgba(185,225,223,.02),0 0 0 195px rgba(185,225,223,.015);pointer-events:none}
+    .hero-inner{min-height:620px;display:grid;grid-template-columns:1.45fr .55fr;align-items:center;gap:50px;padding-top:72px;padding-bottom:82px;position:relative;z-index:1}
+    .eyebrow{color:var(--teal2);margin:0 0 24px}
+    h1{font:600 clamp(48px,7vw,88px)/.99 var(--display);letter-spacing:-.075em;margin:0;max-width:850px}
+    h1 .surname{color:var(--teal2)}
+    .hero-rule{width:70px;height:3px;background:var(--gold);margin:32px 0 25px}
+    .hero-lead{max-width:670px;color:#d1dadd;font-size:clamp(17px,2vw,21px);line-height:1.65;margin:0}
+    .hero-lead strong{color:#fff;font-weight:600}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:34px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;text-decoration:none;font-weight:700;font-size:12px;letter-spacing:.07em;text-transform:uppercase;transition:transform .2s,background .2s}
+    .button:hover{transform:translateY(-2px)}
+    .button.primary{background:var(--teal);color:white}
+    .button.secondary{border:1px solid #647780;color:white}
+    .hero-aside{align-self:end;border-left:1px solid rgba(255,255,255,.2);padding:0 0 5px 25px;margin-bottom:15px}
+    .hero-aside .mono{color:var(--gold)}
+    .hero-aside p{font:18px/1.5 var(--serif);color:#e5e9e8;margin:12px 0 0}
+    .hero-aside small{display:block;color:#9fb0b6;font-size:12px;margin-top:15px}
+    .ticker{background:#e8e9e3;border-bottom:1px solid var(--line)}
+    .ticker-inner{display:flex;align-items:center;gap:28px;min-height:68px;overflow:hidden}
+    .ticker .mono{color:#63727a;white-space:nowrap}
+    .ticker-items{display:flex;gap:25px;flex-wrap:wrap;color:#344750;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+    .ticker-items span:before{content:"/";color:var(--teal);margin-right:25px}
+    section{padding:105px 0}
+    .section-head{display:grid;grid-template-columns:180px 1fr;gap:35px;margin-bottom:50px}
+    .section-index{color:var(--teal);padding-top:9px}
+    .section-title{font:600 clamp(34px,4.3vw,53px)/1.08 var(--display);letter-spacing:-.06em;margin:0;color:var(--navy)}
+    .section-intro{max-width:700px;color:var(--muted);margin:17px 0 0;font-size:16px}
+    .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:85px}
+    .prose p{color:#4b5a61;margin:0 0 18px;max-width:680px}
+    .prose p:first-child{font-size:19px;line-height:1.7;color:#283a43}
+    .principles{border-top:1px solid var(--line)}
+    .principle{display:grid;grid-template-columns:42px 1fr;gap:15px;padding:19px 0;border-bottom:1px solid var(--line)}
+    .principle .n{font:12px var(--mono);color:var(--teal);padding-top:4px}
+    .principle h3{font:700 15px var(--display);margin:0 0 4px}
+    .principle p{font-size:13px;color:var(--muted);margin:0}
+    .work{background:#e9ece7}
+    .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .work-card{background:var(--white);padding:30px 31px 28px;min-height:260px;display:flex;flex-direction:column;border-top:3px solid var(--teal);transition:transform .2s,box-shadow .2s}
+    .work-card:hover{transform:translateY(-4px);box-shadow:0 14px 35px rgba(22,45,55,.08)}
+    .work-card .mono{color:var(--teal)}
+    .work-card h3{font:700 24px/1.2 var(--display);letter-spacing:-.04em;margin:19px 0 10px;color:var(--navy)}
+    .work-card p{font-size:14px;color:#5a686e;margin:0 0 24px;max-width:550px}
+    .work-card a{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;color:#007783;margin-top:auto}
+    .work-card a:hover{text-decoration:underline}
+    .work-card.feature{background:var(--navy);color:white;border-color:var(--gold)}
+    .work-card.feature h3{color:white}
+    .work-card.feature p{color:#c0ccd0}
+    .work-card.feature .mono{color:var(--teal2)}
+    .work-card.feature a{color:var(--teal2)}
+    .status{display:inline-block;border:1px solid #cbd6d2;padding:4px 8px;color:#65746f;font:10px var(--mono);letter-spacing:.08em;text-transform:uppercase;width:max-content}
+    .research-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+    .research-list{border-top:1px solid var(--line)}
+    .research-item{padding:18px 0;border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:flex-start}
+    .research-item:before{content:"↗";font-size:15px;color:var(--teal);padding-top:1px}
+    .research-item div{font-weight:600;font-size:15px}
+    .research-item small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:4px}
+    .note-panel{background:var(--navy);color:white;padding:34px}
+    .note-panel .mono{color:var(--gold)}
+    .note-panel h3{font:600 29px/1.18 var(--display);letter-spacing:-.05em;margin:19px 0 13px}
+    .note-panel p{color:#c4d0d3;font-size:14px;margin:0 0 20px}
+    .note-panel a{color:var(--teal2);font-weight:700;font-size:12px;text-decoration:none;text-transform:uppercase;letter-spacing:.08em}
+    .career{background:var(--white)}
+    .timeline{max-width:850px;margin-left:auto;border-top:1px solid var(--line)}
+    .timeline-item{display:grid;grid-template-columns:145px 1fr;gap:30px;padding:24px 0;border-bottom:1px solid var(--line)}
+    .timeline-date{font:11px var(--mono);color:var(--teal);padding-top:4px}
+    .timeline-item h3{font:700 17px var(--display);margin:0 0 4px}
+    .timeline-item p{font-size:13px;color:var(--muted);margin:0}
+    .credentials{background:var(--navy);color:white}
+    .credentials .section-title{color:white}
+    .credentials .section-intro{color:#b8c6ca}
+    .credentials .section-index{color:var(--teal2)}
+    .credential-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#334550;border:1px solid #334550}
+    .credential{background:var(--navy);padding:26px;min-height:150px}
+    .credential .mono{color:var(--gold)}
+    .credential h3{font:700 16px var(--display);margin:15px 0 7px}
+    .credential p{font-size:12px;color:#aebdc2;margin:0}
+    .writing{background:#e9ece7}
+    .writing-inner{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:start}
+    .writing-copy p{color:#526168;max-width:570px}
+    .writing-callout{padding:27px 0;border-top:1px solid #cbd3ce;border-bottom:1px solid #cbd3ce}
+    .writing-callout blockquote{font:25px/1.45 var(--serif);color:var(--navy);margin:0}
+    .writing-callout cite{display:block;font:11px var(--mono);font-style:normal;color:var(--teal);margin-top:17px;text-transform:uppercase}
+    .contact{background:var(--paper)}
+    .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px}
+    .contact-title{font:600 clamp(38px,5vw,64px)/1.02 var(--display);letter-spacing:-.07em;color:var(--navy);margin:0 0 20px}
+    .contact-copy{color:var(--muted);max-width:550px}
+    .contact-links{border-top:1px solid var(--line)}
+    .contact-links a{display:flex;justify-content:space-between;align-items:center;text-decoration:none;padding:16px 0;border-bottom:1px solid var(--line);font-weight:700;font-size:14px}
+    .contact-links a span:last-child{color:var(--teal);font-size:18px}
+    footer{background:var(--navy);color:#b2c0c4;padding:30px 0}
+    .footer-inner{display:flex;justify-content:space-between;gap:25px;align-items:center}
+    footer p{font-size:11px;margin:0}
+    footer a{color:var(--teal2);text-decoration:none}
+    .backtop{font:11px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+    @media(max-width:800px){
+      .nav{height:66px}.menu{display:block}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;background:var(--navy);padding:20px 24px 25px;flex-direction:column;align-items:flex-start;gap:19px;border-top:1px solid #344650}.navlinks.open{display:flex}
+      .hero-inner{grid-template-columns:1fr;min-height:0;padding-top:80px;padding-bottom:65px;gap:45px}.hero-aside{max-width:400px;margin:0}
+      .section-head{grid-template-columns:1fr;gap:10px;margin-bottom:35px}
+      .about-grid,.research-grid,.writing-inner,.contact-grid{grid-template-columns:1fr;gap:38px}
+      .work-grid{grid-template-columns:1fr 1fr}
+      .credential-grid{grid-template-columns:1fr 1fr}
+      section{padding:78px 0}
     }
-    .decker-logo {
-      font-family: 'Georgia', serif;
-      font-size: 1.15rem;
-      color: #fff;
-      letter-spacing: 0.02em;
+    @media(max-width:540px){
+      .wrap{width:min(100% - 36px,var(--max))}
+      h1{font-size:49px}.hero-inner{padding-top:65px}
+      .ticker-inner{align-items:flex-start;flex-direction:column;gap:8px;padding:17px 0}
+      .ticker-items{gap:8px 16px}.ticker-items span:before{margin-right:13px}
+      .work-grid,.credential-grid{grid-template-columns:1fr}
+      .work-card{min-height:230px;padding:25px}
+      .timeline-item{grid-template-columns:1fr;gap:6px}
+      .footer-inner{align-items:flex-start;flex-direction:column}
+      .contact-links a{font-size:13px}
     }
-    .decker-logo span { color: var(--decker-gold); }
-    .decker-nav { display: flex; gap: 2rem; list-style: none; margin: 0; padding: 0; }
-    .decker-nav a { color: #c0d8e0; text-decoration: none; font-size: 0.88rem; font-weight: 600; letter-spacing: 0.04em; transition: color 0.15s; }
-    .decker-nav a:hover { color: #fff; }
-    .decker-nav a.accent { color: var(--decker-gold); }
-    @media (max-width: 640px) { .decker-nav { display: none; } }
-
-    /* ---- HERO ---- */
-    .decker-hero {
-      background: linear-gradient(140deg, var(--decker-navy) 0%, #0a3a52 55%, #005f6a 100%);
-      padding: 5.5rem 0 4.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .decker-hero::before {
-      content: '';
-      position: absolute;
-      top: -80px; right: -80px;
-      width: 450px; height: 450px;
-      border-radius: 50%;
-      background: rgba(0,142,155,0.1);
-    }
-    .decker-hero::after {
-      content: '';
-      position: absolute;
-      bottom: -100px; left: -100px;
-      width: 360px; height: 360px;
-      border-radius: 50%;
-      background: rgba(201,162,39,0.07);
-    }
-    .decker-hero h1 {
-      color: #fff;
-      font-family: 'Georgia', serif;
-      font-size: 2.8rem;
-      line-height: 1.15;
-      margin-bottom: 0.3rem;
-    }
-    .hero-eyebrow {
-      color: var(--decker-gold);
-      font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      margin-bottom: 0.8rem;
-    }
-    .decker-hero p.lead {
-      color: #b8d4dc;
-      font-size: 1.08rem;
-      line-height: 1.75;
-      max-width: 600px;
-      margin: 1.2rem 0 2rem;
-    }
-    .tag-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
-    .tag {
-      background: rgba(0,142,155,0.22);
-      border: 1px solid rgba(0,142,155,0.5);
-      color: #9bd6de;
-      font-size: 0.75rem;
-      padding: 0.28rem 0.8rem;
-      border-radius: 2rem;
-      letter-spacing: 0.05em;
-    }
-    .cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
-    .btn-primary {
-      background: var(--decker-teal);
-      color: #fff;
-      padding: 0.75rem 1.8rem;
-      font-weight: 700;
-      font-size: 0.95rem;
-      border-radius: 3px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    .btn-primary:hover { background: var(--decker-teal-dark); color: #fff; }
-    .btn-ghost {
-      background: transparent;
-      color: #fff;
-      border: 2px solid rgba(255,255,255,0.4);
-      padding: 0.72rem 1.8rem;
-      font-weight: 600;
-      font-size: 0.95rem;
-      border-radius: 3px;
-      text-decoration: none;
-      transition: border-color 0.2s;
-    }
-    .btn-ghost:hover { border-color: #fff; color: #fff; }
-
-    /* ---- SECTION COMMON ---- */
-    .sec { padding: 5rem 0; }
-    .sec-label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--decker-teal);
-      margin-bottom: 0.35rem;
-    }
-    .sec-title {
-      font-family: 'Georgia', serif;
-      font-size: 1.9rem;
-      color: var(--decker-navy);
-      margin-bottom: 0.5rem;
-    }
-    .sec-rule {
-      width: 44px;
-      height: 3px;
-      background: var(--decker-gold);
-      margin-bottom: 2rem;
-    }
-
-    /* ---- ABOUT ---- */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      margin-top: 1rem;
-    }
-    @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
-    .about-text p { font-size: 1rem; line-height: 1.82; color: #333; margin-bottom: 1rem; }
-    .stat-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-    .stat-card {
-      border-left: 4px solid var(--decker-teal);
-      background: var(--decker-teal-light);
-      padding: 0.9rem 1.1rem;
-      border-radius: 2px;
-    }
-    .stat-num { font-size: 1.9rem; font-weight: 800; color: var(--decker-teal-dark); line-height: 1; }
-    .stat-lbl { font-size: 0.78rem; color: #4a5568; margin-top: 0.2rem; }
-
-    /* ---- PROJECTS ---- */
-    .projects-bg { background: #f5fafb; }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-      gap: 1.4rem;
-      margin-top: 1rem;
-    }
-    .card {
-      background: #fff;
-      border-top: 4px solid var(--decker-teal);
-      border-radius: 3px;
-      padding: 1.5rem;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.06);
-      transition: box-shadow 0.2s, transform 0.2s;
-    }
-    .card:hover { box-shadow: 0 5px 20px rgba(0,142,155,0.14); transform: translateY(-3px); }
-    .badge {
-      display: inline-block;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.15rem 0.6rem;
-      border-radius: 2rem;
-      margin-bottom: 0.6rem;
-    }
-    .b-active { background: #d1f2e0; color: #1a6b3c; }
-    .b-dev    { background: #fff3cd; color: #7d5a00; }
-    .b-live   { background: #d0e8ff; color: #00407d; }
-    .b-concept{ background: #eae4f5; color: #4a2d88; }
-    .card-icon { font-size: 1.7rem; margin-bottom: 0.7rem; }
-    .card h3 { font-size: 1rem; font-weight: 700; color: var(--decker-navy); margin-bottom: 0.45rem; }
-    .card p { font-size: 0.875rem; color: #505a68; line-height: 1.65; }
-    .card-link { display: inline-block; margin-top: 0.9rem; font-size: 0.82rem; font-weight: 700; color: var(--decker-teal); text-decoration: none; }
-    .card-link:hover { color: var(--decker-teal-dark); text-decoration: underline; }
-
-    /* ---- CREDENTIALS ---- */
-    .cred-bg { background: var(--decker-navy); }
-    .cred-bg .sec-label { color: var(--decker-gold); }
-    .cred-bg .sec-title { color: #fff; }
-    .cred-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.1rem;
-      margin-top: 1rem;
-    }
-    .cred-item {
-      border-left: 3px solid var(--decker-teal);
-      background: rgba(255,255,255,0.055);
-      padding: 1rem 1.2rem;
-      border-radius: 2px;
-    }
-    .cred-title { font-weight: 700; color: #fff; font-size: 0.95rem; margin-bottom: 0.25rem; }
-    .cred-body { font-size: 0.84rem; color: #7ab0bf; line-height: 1.6; }
-
-    /* ---- CONTACT ---- */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      margin-top: 1rem;
-    }
-    @media (max-width: 640px) { .contact-grid { grid-template-columns: 1fr; } }
-    .contact-info p { font-size: 0.95rem; color: #4a5568; line-height: 1.78; margin-bottom: 0.75rem; }
-    .contact-info a { color: var(--decker-teal); font-weight: 600; text-decoration: none; }
-    .contact-info a:hover { text-decoration: underline; }
-    .info-box {
-      background: var(--decker-teal-light);
-      border-left: 4px solid var(--decker-teal);
-      padding: 1.3rem 1.4rem;
-      border-radius: 3px;
-      font-size: 0.9rem;
-      line-height: 1.75;
-      color: #2d4a55;
-    }
-    .info-box strong { color: var(--decker-navy); }
-    .usa-alert--teal {
-      border-left-color: var(--decker-teal) !important;
-      margin-bottom: 1.2rem;
-    }
-
-    /* ---- FOOTER ---- */
-    .decker-footer {
-      background: var(--decker-navy);
-      padding: 2rem 0;
-      text-align: center;
-    }
-    .decker-footer p { color: #5a7e90; font-size: 0.8rem; margin: 0.2rem 0; }
-    .decker-footer a { color: var(--decker-teal); text-decoration: none; }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>
 </head>
 <body>
-
-<!-- HEADER -->
-<header class="decker-header">
-  <div class="decker-logo">Dr. J. R. Decker <span>MD</span></div>
-  <nav>
-    <ul class="decker-nav">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#credentials">Credentials</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="https://anaesthesia.ng" target="_blank" rel="noopener" class="accent">anaesthesia.ng &rarr;</a></li>
-    </ul>
-  </nav>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">J. R. DECKER<span>.</span></a>
+    <button class="menu" id="menu" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation">MENU</button>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#work">Work</a><a href="#research">Research</a><a href="#career">Experience</a><a href="#contact" class="contact-link">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<!-- HERO -->
-<section class="decker-hero">
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8 desktop:grid-col-7">
-        <p class="hero-eyebrow">Anaesthesia Registrar &bull; AKTH Kano &bull; Nigeria</p>
-        <h1>Dr. Joseph<br>Roland Decker</h1>
-        <div class="tag-row">
-          <span class="tag">NPMCN Primary</span>
-          <span class="tag">WACS Primary</span>
-          <span class="tag">WACS DA</span>
-          <span class="tag">Pain Management</span>
-          <span class="tag">Medical Education</span>
-          <span class="tag">Health Technology</span>
-        </div>
-        <p class="lead">
-          Clinician, educator, and builder working at the intersection of anaesthesia practice and structured knowledge production. Founder of the WACS DA Study Group, editor of the WACS Update Book 2026 Edition, and creator of anaesthesia.ng.
-        </p>
-        <div class="cta-row">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a href="#contact" class="btn-ghost">Contact</a>
-          <a href="Joseph_Roland_Decker_CV.pdf" class="btn-ghost" download>Download CV</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="sec" id="about">
-  <div class="grid-container">
-    <p class="sec-label">Background</p>
-    <h2 class="sec-title">Clinician. Educator. Builder.</h2>
-    <div class="sec-rule"></div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          Trained across federal tertiary institutions in Nigeria, I apply first-principles reasoning to clinical practice and knowledge production with equal rigor. My clinical domain is anaesthesia; my long-horizon specialization target is pain management.
-        </p>
-        <p>
-          Beyond the operating theatre, I run a structured 15-week study cohort for WACS Diploma in Anaesthesia candidates, produce high-density SBA question banks and reference texts, and am developing anaesthesia.ng as a free-access education platform for trainees across West Africa.
-        </p>
-        <p>
-          Epistemologically, I am grounded in Popperian falsifiability, Deutschian optimism, and Talebian robustness: problems are solvable, knowledge grows by conjecture and criticism, and fragility must be designed out of systems.
-        </p>
-      </div>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-inner">
       <div>
-        <div class="stat-grid">
-          <div class="stat-card"><div class="stat-num">37+</div><div class="stat-lbl">Study Group Members</div></div>
-          <div class="stat-card"><div class="stat-num">45</div><div class="stat-lbl">Chapters, Update Book 2026</div></div>
-          <div class="stat-card"><div class="stat-num">1,350</div><div class="stat-lbl">SBAs in Production</div></div>
-          <div class="stat-card"><div class="stat-num">15</div><div class="stat-lbl">Week Structured Curriculum</div></div>
-          <div class="stat-card"><div class="stat-num">2</div><div class="stat-lbl">Fellowship Primaries Passed</div></div>
-          <div class="stat-card"><div class="stat-num" style="font-size:1.5rem">WACS DA</div><div class="stat-lbl">Diploma in Anaesthesia Candidate</div></div>
+        <p class="mono eyebrow">Medicine · Systems · Technology · Nigeria</p>
+        <h1>Joseph Roland<br><span class="surname">Decker.</span></h1>
+        <div class="hero-rule"></div>
+        <p class="hero-lead"><strong>Anaesthetist. Healthcare systems thinker. Builder.</strong><br>
+          Working at the intersection of clinical medicine, healthcare infrastructure and technology, with a long-term focus on making healthcare work better across Africa.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore my work</a>
+          <a class="button secondary" href="#about">About me</a>
+        </div>
+      </div>
+      <aside class="hero-aside">
+        <span class="mono">Current base</span>
+        <p>Anaesthesia Registrar<br>Aminu Kano Teaching Hospital<br>Kano, Nigeria</p>
+        <small>Clinical practice · Education · Systems building</small>
+      </aside>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <div class="wrap ticker-inner">
+      <span class="mono">Areas of work</span>
+      <div class="ticker-items"><span>Anaesthesia</span><span>Healthcare systems</span><span>Medical education</span><span>Health technology</span><span>Research</span></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="mono section-index">01 / About</div>
+        <div><h2 class="section-title">Medicine is where I work.<br>Systems are what I study.</h2>
+          <p class="section-intro">My career has moved through clinical medicine, healthcare financing and back into specialist medical training. That journey shaped a conviction: better healthcare requires better institutions, incentives, infrastructure and tools.</p>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="prose">
+          <p>I am a Nigerian medical doctor training in anaesthesia at Aminu Kano Teaching Hospital. My professional path includes earlier experience in healthcare financing and HMO operations, giving me exposure to healthcare from both the clinical and organisational sides.</p>
+          <p>My clinical interests include perioperative care, regional anaesthesia, pain management, patient safety and the practical challenges of delivering reliable care in resource-constrained environments.</p>
+          <p>Beyond clinical practice, I build educational resources and explore how software, data and sound institutional design can improve healthcare delivery. I am particularly interested in the infrastructure required to make high-quality care more accessible across Africa.</p>
+        </div>
+        <div class="principles">
+          <div class="principle"><span class="n">01</span><div><h3>Knowledge grows through criticism</h3><p>Ideas should survive scrutiny, testing and revision. Confidence is no substitute for evidence.</p></div></div>
+          <div class="principle"><span class="n">02</span><div><h3>Think in systems</h3><p>Clinical outcomes emerge from people, processes, incentives, technology and institutions.</p></div></div>
+          <div class="principle"><span class="n">03</span><div><h3>Build for robustness</h3><p>Useful systems should tolerate error, adapt to constraints and improve through feedback.</p></div></div>
+          <div class="principle"><span class="n">04</span><div><h3>Prefer compounding work</h3><p>Education, research, software and institutions can create value long after the initial effort.</p></div></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROJECTS -->
-<section class="sec projects-bg" id="projects">
-  <div class="grid-container">
-    <p class="sec-label">Active Work</p>
-    <h2 class="sec-title">Projects &amp; Initiatives</h2>
-    <div class="sec-rule"></div>
-    <div class="card-grid">
-
-      <div class="card">
-        <span class="badge b-active">Active</span>
-        <div class="card-icon">📚</div>
-        <h3>WACS Update Book 2026 Edition</h3>
-        <p>45-chapter, 1,350-SBA medical reference across seven domain groups: Physiology, Pharmacology, Tools &amp; Diagnostics, Core Clinical Practice, Subspecialty Anaesthesia, Critical Care, and Emergencies. Edited by J. R. Decker. 2026 edition, in production.</p>
-        <a href="mailto:mailrolanddecker@gmail.com?subject=WACS%20Update%20Book%202026%20access" class="card-link">Request Access &rarr;</a>
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="mono section-index">02 / Work</div>
+        <div><h2 class="section-title">Building useful things.</h2>
+          <p class="section-intro">A selection of platforms, educational initiatives and longer-term work. Project status is stated plainly; ideas in development are not presented as finished products.</p>
+        </div>
       </div>
-
-      <div class="card">
-        <span class="badge b-active">Active</span>
-        <div class="card-icon">🎓</div>
-        <h3>WACS DA Study Group</h3>
-        <p>37-member cohort. Sunday WhatsApp sessions. Attendance-tracked, locked curriculum. Three missed sessions without notice triggers removal. Preparing candidates for the WACS Diploma in Anaesthesia.</p>
-        <a href="mailto:mailrolanddecker@gmail.com?subject=WACS%20DA%20Study%20Group%20membership" class="card-link">Apply for Membership &rarr;</a>
-      </div>
-
-      <div class="card">
-        <span class="badge b-live">Live</span>
-        <div class="card-icon">🌐</div>
-        <h3>anaesthesia.ng</h3>
-        <p>Free-access anaesthesia education platform for West African trainees. Live: clinical articles, the clinical notes desk, study resources and exam-preparation guides, no paywall.</p>
-        <a href="https://anaesthesia.ng/articles/" target="_blank" rel="noopener" class="card-link">Read the articles &rarr;</a> <a href="https://anaesthesia.ng" target="_blank" rel="noopener" class="card-link">Visit &rarr;</a>
-      </div>
-
-      <div class="card">
-        <span class="badge b-dev">In Development</span>
-        <div class="card-icon">🧠</div>
-        <h3>Anaesthesia Memory Vault</h3>
-        <p>Mnemonic reference book for anaesthesia trainees. 17-page draft (ReportLab). Distills pharmacology, physiology, and clinical decision rules into high-recall memory structures.</p>
-        <a href="mailto:mailrolanddecker@gmail.com?subject=Anaesthesia%20Memory%20Vault" class="card-link">Learn More &rarr;</a>
-      </div>
-
-      <div class="card">
-        <span class="badge b-concept">Concept</span>
-        <div class="card-icon">🏥</div>
-        <h3>Decker Health Software Stack</h3>
-        <p>Long-horizon vision: a vertically integrated Nigerian healthcare conglomerate with a fully in-house software stack. Goal: eliminate vendor dependency, reduce cost, and harden institutional security.</p>
-        <a href="mailto:mailrolanddecker@gmail.com?subject=Collaboration%20enquiry" class="card-link">Discuss &rarr;</a>
-      </div>
-
-      <div class="card">
-        <span class="badge b-concept">Concept</span>
-        <div class="card-icon">🎙️</div>
-        <h3>Anaesthesia Audiobook Podcast</h3>
-        <p>Structured audio conversion of anaesthesia textbooks. Designed for trainees with limited reading time. Targets West African fellowship syllabi and WACS DA curriculum directly.</p>
-        <a href="mailto:mailrolanddecker@gmail.com?subject=Collaboration%20enquiry" class="card-link">Discuss &rarr;</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CREDENTIALS -->
-<section class="sec cred-bg" id="credentials">
-  <div class="grid-container">
-    <p class="sec-label">Qualifications &amp; Training</p>
-    <h2 class="sec-title">Credentials</h2>
-    <div class="sec-rule"></div>
-    <div class="cred-grid">
-      <div class="cred-item">
-        <div class="cred-title">MBChB</div>
-        <div class="cred-body">Basic medical qualification. Foundation for specialist postgraduate training in Nigeria.</div>
-      </div>
-      <div class="cred-item">
-        <div class="cred-title">NPMCN Primary &mdash; Anaesthesia</div>
-        <div class="cred-body">National Postgraduate Medical College of Nigeria. Primary fellowship examination. Passed.</div>
-      </div>
-      <div class="cred-item">
-        <div class="cred-title">WACS Primary &mdash; Anaesthesia</div>
-        <div class="cred-body">West African College of Surgeons. Primary fellowship examination. Passed.</div>
-      </div>
-      <div class="cred-item">
-        <div class="cred-title">WACS DA Candidate</div>
-        <div class="cred-body">Registered candidate for the WACS Diploma in Anaesthesia.</div>
-      </div>
-      <div class="cred-item">
-        <div class="cred-title">Anaesthesia Registrar &mdash; AKTH</div>
-        <div class="cred-body">Aminu Kano Teaching Hospital, Kano, Nigeria. Active clinical posting in general, obstetric, and regional anaesthesia.</div>
-      </div>
-      <div class="cred-item">
-        <div class="cred-title">Target Subspecialty: Pain Management</div>
-        <div class="cred-body">Post-fellowship specialization target. Research interests include perioperative pain optimization and analgesic modalities in low-resource settings.</div>
+      <div class="work-grid">
+        <article class="work-card feature">
+          <span class="mono">01 / Live platform</span>
+          <h3>anaesthesia.ng</h3>
+          <p>An education platform for anaesthesia trainees, with clinical learning resources, articles and exam-preparation material. Built around the need for accessible, relevant educational content for practitioners in the region.</p>
+          <a href="https://anaesthesia.ng" target="_blank" rel="noopener">Visit anaesthesia.ng ↗</a>
+        </article>
+        <article class="work-card">
+          <span class="mono">02 / Medical education</span>
+          <h3>WACS examination preparation</h3>
+          <p>Collaborative preparation for West African College of Surgeons anaesthesia examinations, including structured reading, question-based learning and peer accountability.</p>
+          <span class="status">Ongoing initiative</span>
+        </article>
+        <article class="work-card">
+          <span class="mono">03 / Research infrastructure</span>
+          <h3>Clinical data and research</h3>
+          <p>Exploring practical ways to turn routine perioperative records into structured data that can support audit, clinical research, quality improvement and better local evidence.</p>
+          <span class="status">Research direction</span>
+        </article>
+        <article class="work-card">
+          <span class="mono">04 / Long-term venture</span>
+          <h3>Decker Health Systems</h3>
+          <p>A long-horizon ambition to build technology and operational infrastructure for more effective healthcare institutions in Africa, beginning with focused, financially sustainable products.</p>
+          <span class="status">Early-stage vision</span>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section class="sec" id="contact">
-  <div class="grid-container">
-    <p class="sec-label">Connect</p>
-    <h2 class="sec-title">Contact</h2>
-    <div class="sec-rule"></div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p><strong>Institutional Base</strong><br>Aminu Kano Teaching Hospital<br>Kano, Nigeria</p>
-        <p><strong>Education Platform</strong><br><a href="https://anaesthesia.ng" target="_blank" rel="noopener">anaesthesia.ng</a></p>
-        <p><strong>Code</strong><br><a href="https://github.com/RolandDecker" target="_blank" rel="noopener">github.com/RolandDecker</a></p>
-        <p><strong>CV</strong><br><a href="Joseph_Roland_Decker_CV.pdf" download>Joseph_Roland_Decker_CV.pdf</a></p>
-        <p><strong>Professional Focus</strong><br>Anaesthesia education &bull; Pain management &bull; Medical publishing &bull; Health technology</p>
-        <p><strong>Study Group</strong><br>WACS DA Study Group &bull; Contact for membership details</p>
+  <section id="research">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="mono section-index">03 / Research</div>
+        <div><h2 class="section-title">Questions worth investigating.</h2>
+          <p class="section-intro">My research interests are grounded in problems encountered in clinical practice and the wider healthcare system. I am developing a research portfolio alongside specialist training.</p>
+        </div>
       </div>
+      <div class="research-grid">
+        <div class="research-list">
+          <div class="research-item"><div>Perioperative outcomes and patient safety<small>Reliable care processes, complications and quality improvement.</small></div></div>
+          <div class="research-item"><div>Obstetric and regional anaesthesia<small>Access, practice patterns, safety and context-specific outcomes.</small></div></div>
+          <div class="research-item"><div>Clinical data infrastructure<small>Structured anaesthesia records, registries and research readiness.</small></div></div>
+          <div class="research-item"><div>Medical education and assessment<small>Question banks, curriculum design and technology-supported learning.</small></div></div>
+          <div class="research-item"><div>Healthcare systems and financing<small>Incentives, institutional performance and technology adoption.</small></div></div>
+        </div>
+        <aside class="note-panel">
+          <span class="mono">Research principle</span>
+          <h3>Start with a real problem. Design a way to measure it.</h3>
+          <p>Good research should clarify what is happening, expose weak assumptions and make better decisions possible. I am interested in collaborative work that produces usable evidence for African healthcare settings.</p>
+          <a href="mailto:mailrolanddecker@gmail.com?subject=Research%20collaboration">Discuss a research collaboration ↗</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="career" id="career">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="mono section-index">04 / Experience</div>
+        <div><h2 class="section-title">A career across clinical care and healthcare operations.</h2>
+          <p class="section-intro">The sequence matters: experience in healthcare delivery and financing informs how I think about the operating environment clinicians work within.</p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-date">AUG 2025 — PRESENT</div><div><h3>Anaesthesia Registrar</h3><p>Aminu Kano Teaching Hospital, Kano, Nigeria. Specialist postgraduate training in anaesthesia.</p></div></div>
+        <div class="timeline-item"><div class="timeline-date">JAN 2023 — JUL 2025</div><div><h3>Medical Officer</h3><p>Federal Medical Centre, Owo, Nigeria.</p></div></div>
+        <div class="timeline-item"><div class="timeline-date">FEB 2019 — SEP 2021</div><div><h3>Regional Head, North West</h3><p>Venus Medicare. Healthcare management and HMO operations.</p></div></div>
+        <div class="timeline-item"><div class="timeline-date">2007</div><div><h3>Medical degree</h3><p>MBBS, Ahmadu Bello University, Zaria, Nigeria.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="credentials" id="credentials">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="mono section-index">05 / Qualifications</div>
+        <div><h2 class="section-title">Training and credentials.</h2>
+          <p class="section-intro">Medical education and postgraduate anaesthesia examinations completed to date.</p>
+        </div>
+      </div>
+      <div class="credential-grid">
+        <article class="credential"><span class="mono">Medical degree</span><h3>MBBS</h3><p>Ahmadu Bello University, Zaria.</p></article>
+        <article class="credential"><span class="mono">Postgraduate examination</span><h3>WACS Primary</h3><p>Anaesthesia. Passed.</p></article>
+        <article class="credential"><span class="mono">Postgraduate examination</span><h3>NPMCN Primary</h3><p>Anaesthesia. Passed.</p></article>
+        <article class="credential"><span class="mono">Diploma</span><h3>WACS Diploma in Anaesthesia</h3><p>Passed, 2026.</p></article>
+        <article class="credential"><span class="mono">Current appointment</span><h3>Anaesthesia Registrar</h3><p>Aminu Kano Teaching Hospital, Kano.</p></article>
+        <article class="credential"><span class="mono">Professional interests</span><h3>Pain and perioperative medicine</h3><p>Regional anaesthesia, pain management and patient safety.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="writing" id="writing">
+    <div class="wrap writing-inner">
+      <div class="writing-copy">
+        <div class="mono section-index">06 / Ideas and writing</div>
+        <h2 class="section-title">Thinking in public.</h2>
+        <p>I use writing to examine ideas, test assumptions and make sense of problems across medicine, technology, economics and institutional design.</p>
+        <p>This section will grow into an archive of essays, notes and arguments. I will add pieces as they are ready for public scrutiny.</p>
+        <a class="button primary" href="https://x.com/rolanddecker" target="_blank" rel="noopener">Follow my thinking on X ↗</a>
+      </div>
+      <div class="writing-callout">
+        <blockquote>“The purpose of a system is what it does.”</blockquote>
+        <cite>Systems thinking · A useful question for every institution</cite>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
       <div>
-        <div class="usa-alert usa-alert--info usa-alert--slim usa-alert--teal" style="margin-bottom: 1.2rem;">
-          <div class="usa-alert__body">
-            <p class="usa-alert__text" style="font-size:0.88rem;">
-              For collaboration on medical education content, study group membership, or the WACS Update Book 2026 Edition, reach out by email at <a href="mailto:mailrolanddecker@gmail.com">mailrolanddecker@gmail.com</a>, or via <strong>anaesthesia.ng</strong>. Remote collaboration welcome: medical-education content, question-bank and curriculum work.
-            </p>
-          </div>
-        </div>
-        <div class="info-box">
-          <strong>WACS DA Study Group</strong><br>
-          37 members &bull; Sunday sessions &bull; WhatsApp-based<br>
-          15-week curriculum &bull; SBA question sets weekly<br><br>
-          Slots are limited. Attendance is tracked. Three missed sessions without prior notice results in removal from the group.
-        </div>
+        <div class="mono section-index">07 / Contact</div>
+        <h2 class="contact-title">Good work begins with a useful conversation.</h2>
+        <p class="contact-copy">For professional enquiries, research collaborations, medical education projects and conversations about healthcare technology, get in touch.</p>
+        <a class="button primary" href="mailto:mailrolanddecker@gmail.com">Send an email</a>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:mailrolanddecker@gmail.com"><span>Email</span><span>↗</span></a>
+        <a href="https://x.com/rolanddecker" target="_blank" rel="noopener"><span>X / Twitter</span><span>↗</span></a>
+        <a href="https://github.com/RolandDecker" target="_blank" rel="noopener"><span>GitHub</span><span>↗</span></a>
+        <a href="https://anaesthesia.ng" target="_blank" rel="noopener"><span>anaesthesia.ng</span><span>↗</span></a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
-<!-- FOOTER -->
-<footer class="decker-footer">
-  <div class="grid-container">
-    <p>&copy; 2026 Dr. Joseph Roland Decker &bull; AKTH, Kano, Nigeria</p>
-    <p>
-      <a href="https://anaesthesia.ng" target="_blank" rel="noopener">anaesthesia.ng</a>
-      &bull;
-      Built with <a href="https://designsystem.digital.gov/" target="_blank" rel="noopener">USWDS 3.13</a>
-      &bull;
-    </p>
+<footer>
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Joseph Roland Decker. Based in Kano, Nigeria.</p>
+    <a class="backtop" href="#home">Back to top ↑</a>
   </div>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.13.0/dist/js/uswds.min.js"></script>
+<script>
+  const menu = document.getElementById('menu');
+  const nav = document.getElementById('navlinks');
+  menu.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menu.setAttribute('aria-expanded', String(open));
+    menu.textContent = open ? 'CLOSE' : 'MENU';
+  });
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menu.setAttribute('aria-expanded', 'false');
+    menu.textContent = 'MENU';
+  }));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
